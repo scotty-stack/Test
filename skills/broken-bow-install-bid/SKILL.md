@@ -56,19 +56,19 @@ Output: **One trip: yes / at risk / no**, with the specific reasons.
 
 Read `reference/rate-card.md` (the owner's numbers) and `reference/pricing-lines.md` (how each line is calculated). Price every line and show the arithmetic so the owner can check it in ten seconds:
 
-The formula: **15% of the design budget + the U-Haul + $200 per helper per day in Broken Bow**, plus pass-throughs and add-ons.
+The formula: **15% of the final order total (the owner's fee, theirs alone) + the U-Haul with markup + helper labor**, plus pass-throughs and add-ons. Storage is shown at its full value, then marked complimentary.
 
-1. Design fee: 15% x design budget (from Setup or the final order list)
-2. U-Haul: a real quote for the truck size the cabin needs, with mileage, fuel, coverage and pads
-3. Crew labor: $200 x helpers x days (load, drive, install, drive home)
+1. Design fee: 15% x order total. Use the final order list if it exists, otherwise the Setup budget, labeled as an estimate that adjusts to the final order total
+2. U-Haul: a real quote for the truck size the cabin needs (mileage, fuel, coverage, pads) + the owner's U-Haul markup
+3. Helper labor: helper rate x helpers x days (load, drive, install, drive home)
 4. Lodging and travel, at cost
 5. Trash and packaging haul-off and disposal
 6. Optional: existing furniture removal, by disposition
-7. Storage, only past the free period
+7. Storage: its full value shown, then "included at no charge"; billed only past the free period
 8. Second-trip line (conditional, priced separately, not buried)
 9. Trades passed through (paint, electrical, carpentry, cleaning, decks): quoted cost + markup, and who pays the trade directly
 
-Show what the owner actually keeps (design fee + markup) apart from the bid total.
+Show what the owner keeps apart from the bid total: the design fee (owner only) and any markup on the U-Haul, helper labor and trades.
 
 **Never invent a rate.** If the rate card has a blank, leave the line as `$______` with exactly what's needed, and price everything else. Read [absent-is-not-zero](../../shared/absent-is-not-zero.md) if present: a missing rate is not a free line.
 
@@ -106,11 +106,13 @@ Draft from `reference/bid-template.md`, in the owner's voice (read [the voice pr
 
 - What's included and what's not, in plain words
 - The install window and what it depends on (all items delivered by the cutoff date)
-- The second-trip and storage terms, so a late shipment isn't a surprise invoice
+- The order total wording: the fee is 15% of the final order total, so it adjusts if items are added or removed
+- Complimentary storage, with its value, so the client sees what they're getting
+- The second-trip terms and the storage cutoff, so a late shipment isn't a surprise invoice
 - Damage terms: items are inspected on arrival; vendor damage claims are the client's, with the owner's help
 - Deposit and payment terms from the rate card
 
-Also output the priced lines as rows ready to paste into the job's **Costs & Trades** tab (Type, Trade / vendor, Scope, Room, Quoted, Paid by, Billable, Markup %, Status = Quoted), and a separate list of "our cut" lines for the private Income sheet (who earns it: owner, partner, or both). **The Income sheet numbers never go into anything the client sees.**
+Also output the priced lines as rows ready to paste into the job's **Costs & Trades** tab (Type, Trade / vendor, Scope, Room, Quoted, Paid by, Billable, Markup %, Status = Quoted), and a separate list of "our cut" lines for the private Income sheet (who earns it: owner, partner, or both; the 15% design fee is always the owner's alone). **The Income sheet numbers never go into anything the client sees.**
 
 Produce DOCX or PDF. With Gmail connected, save it as a **draft** to the client.
 
@@ -126,7 +128,7 @@ Offer, don't assume: put the install window and load date on the calendar, and s
 - **Don't bury contingency in other lines.** A visible second-trip line is easy to explain; a padded install line isn't.
 - **Don't invent a rate, distance, or box count.** Blank and named beats plausible and wrong.
 - **Don't send anything to the client without the owner's yes.**
-- **Don't count pass-through money as income.** Trip fuel and lodging billed at cost, and trades the client pays, are not "our cut."
+- **Don't count pass-through money as income.** Trip fuel and lodging billed at cost, the U-Haul's and helpers' actual cost, and trades the client pays are not "our cut." Only the markup on top is.
 - **Don't promise donation pickup or resale results.** Quote the haul; outcomes depend on the charity or buyer.
 
 ## Reference files

@@ -1,6 +1,6 @@
 # Preliminary Overview — for new leads
 
-Use before the client has a final purchase list. It shows the whole project without committing to numbers. Format: a clean one-page web page or PDF in the owner's brand.
+Use before the client has a final purchase list. It shows the whole project without committing to numbers. Format: a Google Doc in the owner's Drive, one per client, titled "<Street> – Cabin Install Overview". The owner shares it view-only with downloading, printing and copying turned off.
 
 ---
 
@@ -22,3 +22,4 @@ Use before the client has a final purchase list. It shows the whole project with
 - No totals for the job, only rates and a clearly labeled example.
 - Never call a storage space "climate-controlled" unless it is.
 - Draft only. The owner shares it.
+- Signed with the owner's own name only. Never use the real estate team name (OREC advertising rules).

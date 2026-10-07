@@ -20,6 +20,10 @@ Turn a client's design order and cabin details into a priced bid the owner can s
 
 The money in this job is lost in the parts nobody quotes: a late shipment that forces a second trip, a 40-minute gravel climb a box truck can't make, three days of storage that turned into three weeks, and a dumpster's worth of cardboard. This skill prices those on purpose.
 
+## Step 0 — New lead with no purchase list yet? Send the overview
+
+When a prospective client wants a proposal but has no final purchase list, don't bid numbers. Build the **preliminary overview** from `reference/preliminary-overview.md`: the six-step process, who does what, a bird's-eye timeline, how pricing works (rates, not totals), what's included, and what's needed for the exact bid. Come back to Step 1 once the list is final.
+
 ## Step 1 — Gather the job, from wherever it lives
 
 The job lives in its **Installation Guide** sheet in Drive (one per client, copied from the HHG Installation Template and named "<Street> Installation Guide"). Search Drive for the client's street name or last name and read these tabs (layout in `reference/hhg-sheet-map.md`):
@@ -56,10 +60,10 @@ Output: **One trip: yes / at risk / no**, with the specific reasons.
 
 Read `reference/rate-card.md` (the owner's numbers) and `reference/pricing-lines.md` (how each line is calculated). Price every line and show the arithmetic so the owner can check it in ten seconds:
 
-The formula: **15% of the final order total (the owner's fee, theirs alone) + the U-Haul with markup + helper labor**, plus pass-throughs and add-ons. Storage is shown at its full value, then marked complimentary.
+The formula: **15% of the final order total (the owner's fee, theirs alone) + the U-Haul at cost + helper labor**, plus pass-throughs and add-ons. Storage is shown at its full value, then marked complimentary.
 
 1. Design fee: 15% x order total. Use the final order list if it exists, otherwise the Setup budget, labeled as an estimate that adjusts to the final order total
-2. U-Haul: a real quote for the truck size the cabin needs (mileage, fuel, coverage, pads) + the owner's U-Haul markup
+2. U-Haul: a real quote for the truck size the cabin needs (mileage, fuel, coverage, pads) billed at cost
 3. Helper labor: helper rate x helpers x days (load, drive, install, drive home)
 4. Lodging and travel, at cost
 5. Trash and packaging haul-off and disposal
@@ -68,7 +72,7 @@ The formula: **15% of the final order total (the owner's fee, theirs alone) + th
 8. Second-trip line (conditional, priced separately, not buried)
 9. Trades passed through (paint, electrical, carpentry, cleaning, decks): quoted cost + markup, and who pays the trade directly
 
-Show what the owner keeps apart from the bid total: the design fee (owner only) and any markup on the U-Haul, helper labor and trades.
+Show what the owner keeps apart from the bid total: the design fee (owner only) and any markup on trades.
 
 **Never invent a rate.** If the rate card has a blank, leave the line as `$______` with exactly what's needed, and price everything else. Read [absent-is-not-zero](../../shared/absent-is-not-zero.md) if present: a missing rate is not a free line.
 
@@ -139,3 +143,4 @@ Offer, don't assume: put the install window and load date on the calendar, and s
 - `reference/load-sizing.md` — estimating truck volume from an order list
 - `reference/pricing-lines.md` — how each line is calculated
 - `reference/bid-template.md` — the client-facing bid layout and standard terms
+- `reference/preliminary-overview.md` — the pre-bid overview for new leads

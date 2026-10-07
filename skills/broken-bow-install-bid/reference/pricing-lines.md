@@ -7,7 +7,7 @@ How each line is calculated. Every line shows its math. Any input that's missing
 ## Core formula
 
 1. **Design fee:** 15% x order total. Use the final order list if it exists. If it doesn't, use the Setup budget and label the fee an estimate that adjusts to the final order total. Always the owner's alone.
-2. **U-Haul:** a real quote for the truck size this cabin needs (see the rate card's size table), with mileage, fuel, coverage, pads and any extra day, plus the owner's U-Haul markup. Never use a remembered price. The client sees one U-Haul line; the cost/markup split stays internal.
+2. **U-Haul:** a real quote for the truck size this cabin needs (see the rate card's size table), with mileage, fuel, coverage, pads and any extra day, billed at cost. Never use a remembered price.
 3. **Helper labor:** billed helper rate x helpers x days. The client sees one labor line; what the helpers are paid stays internal. Show the days: load day, drive day, install days, and drive home if a helper is out that day. Check that the days fit the empty-cabin window.
 
 ## Pass-through lines (billed at cost, not income)
@@ -24,7 +24,7 @@ How each line is calculated. Every line shows its math. Any input that's missing
 
 ## Checks before showing the owner
 
-- **What you keep:** design fee + markup on the U-Haul, helpers and trades. Show it separately from the bid total.
-- **Markup check:** if the U-Haul or helper markup is blank or $0, say so. That's money left on the table.
+- **What you keep:** the design fee plus any markup on trades. Show it separately from the bid total.
+- **Markup check:** the U-Haul and helpers are billed at cost by the owner's choice, so the 15% is the only margin on the install. If the fee is small next to the trip's cost, say so.
 - **Install window:** do the crew days fit between guest stays? If not, say how many more helpers or days it takes.
 - **Comparison:** the nearest past bid. Flag it if the total is more than 15% off and say why.

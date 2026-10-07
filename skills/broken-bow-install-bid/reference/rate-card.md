@@ -12,7 +12,7 @@ Update this whenever a rate changes, so every future bid picks it up.
 Bid = Design fee + U-Haul + Helper labor + pass-through costs + optional add-ons
 
 Design fee    = 15% x final order total            (the owner's fee, not shared)
-U-Haul        = actual rental quote + U-Haul markup
+U-Haul        = whatever U-Haul charges for the truck size requested (at cost, no markup)
 Helper labor  = helper rate x helpers x days in Broken Bow
 Storage       = shown at full value, then "included at no charge"
 ```
@@ -22,7 +22,7 @@ Storage       = shown at full value, then "included at no charge"
 | Design fee % | 15% |
 | Order total means | ______ (goods only? including tax and shipping? Decide once and state it in every bid) |
 | Who earns the design fee | Owner only |
-| U-Haul markup | Flat fee of $______ on top of the actual quote |
+| U-Haul billing | At cost: exactly what U-Haul charges for the truck size requested |
 | Helper cost (what you pay each helper) | about $200 per person per day |
 | Helper rate billed to the client | At cost, the same as what you pay (owner's choice for now; see the note below) |
 | Does the owner's own time count as a crew day? | ______ (default: no, the 15% covers it) |

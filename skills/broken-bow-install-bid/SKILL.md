@@ -26,7 +26,7 @@ When a prospective client wants a proposal but has no final purchase list, don't
 
 ## Step 1 — Gather the job, from wherever it lives
 
-The job lives in its **Installation Guide** sheet in Drive (one per client, copied from the Cabin Install Template and named "<Street> Installation Guide"). Search Drive for the client's street name or last name and read these tabs (layout in `reference/hhg-sheet-map.md`):
+The job lives in its **Installation Guide** sheet in Drive (one per client, copied from **Cabin Install Template (clean)** and named "<Street> Installation Guide"). Search Drive for the client's street name or last name and read these tabs (layout in `reference/hhg-sheet-map.md`):
 
 - **Setup** — bedrooms, bed layout, baths, guests, hot tub / fire pit / game room, the budget by area, and the "Questions for <client>" column
 - **Inventory** — every item, qty, est. cost, ordered, received, installed

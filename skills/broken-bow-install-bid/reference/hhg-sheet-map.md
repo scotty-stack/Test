@@ -1,4 +1,6 @@
-# HHG Installation Guide — Sheet Map
+# Installation Guide — Sheet Map
+
+New jobs use **Cabin Install Template (clean)**: tabs Job Summary, Inventory, Receiving Log, Costs & Trades, Bid, Checklist (optional). Column map and formulas: `skills/cabin-receiving-desk/reference/setup.md`. The table below describes the **older** layout, still used by sheets made before October 2026.
 
 One Google Sheet per client, copied from **Cabin Install Template**. A separate **<Street> Income (Private)** sheet holds the money split and is never shared with the client.
 

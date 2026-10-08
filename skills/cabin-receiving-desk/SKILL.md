@@ -25,7 +25,7 @@ Sources, in this order:
 1. **Order confirmation emails** in the owner's Gmail (clients send them to the owner's business address). Search by the client's name, address, or vendor. Pull vendor, order #, item, quantity, price, and expected delivery date.
 2. **A purchase list** the client sends (spreadsheet, screenshots, links). Paste or upload works.
 
-Output rows ready to paste into the job's **Inventory** tab: Area, Category, Item, Qty, Est. unit cost, Ordered = Y, Vendor / order #, Notes (expected delivery date). Flag anything made-to-order or backordered with a ship date near or past the cutoff; those are the second-trip risks.
+Output rows ready to paste into the job's **Inventory** tab, in column order: Area / room, Category, Item, Vendor, Order #, Tracking #, Qty, Unit cost (leave Line total and Arrived? blank; they fill themselves), then Notes with the expected delivery date. **Inventory is the client's real list only.** If the client is furnishing from scratch, also compare their list against the template's **Checklist (optional)** tab and flag forgotten basics (mattress protectors, extra sheet sets, towels per guest) as questions for the client; never add them to Inventory on your own. Flag anything made-to-order or backordered with a ship date near or past the cutoff; those are the second-trip risks.
 
 **Never invent an order number, price or date.** Missing means blank and named in the summary.
 
@@ -41,7 +41,7 @@ Read the job's **Form Responses** tab and the photos uploaded with each response
    - No matching Inventory line → unexpected item; ask the owner
    - Same tracking number twice → possible duplicate entry
 4. **File the photos** into the client's folder: `Broken Bow Cabin Installs/<Street> – <Names>/Receiving Photos/<date> <vendor> <order #>`. Create folders as needed.
-5. **Give the owner paste-ready updates:** Inventory "Qty received" and "Received date", plus one line per check-in for the Receiving Log.
+5. **Give the owner paste-ready updates:** Inventory Tracking # (if the order line had none), Received date, Condition and Stored at. Arrived? updates itself once the order # or tracking # matches.
 
 ## Step 3 — Damage, wrong item, missing parts
 

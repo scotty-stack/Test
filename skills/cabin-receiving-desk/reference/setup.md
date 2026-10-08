@@ -33,20 +33,33 @@ In the form: **Responses → Link to Sheets → Select existing spreadsheet →*
 
 Photos go to a Drive folder the form creates ("Package Check-in – <Street> (File responses)"). Move that folder into the client's folder; the agent files photos from there.
 
-## 3. Inventory formula ("Arrived?")
+## 3. The job's sheet (Cabin Install Template (clean))
 
-In the job's **Inventory** tab, add a column header in **P1**: `Arrived?`. In **P2**, paste and fill down:
+Make a copy of **Cabin Install Template (clean)** from `_Templates` for each job, rename it "<Street> Installation Guide", and move it into the client's folder. Link the form to it (step 2).
 
+### Inventory columns
+A Area / room · B Category · C Item · D Vendor · **E Order #** · **F Tracking #** · G Qty · H Unit cost · I Line total (auto) · **J Arrived? (auto)** · K Received date · L Condition · M Stored at · N Placement in cabin · O Installed · P Notes
+
+Inventory holds **the client's real purchase list only.** Never the checklist.
+
+### The auto formulas (already in the template; paste back only if one is ever cleared)
+Inventory **I2**:
 ```
-=IF($I2="","",IF(COUNTIF('Form Responses 1'!$D:$D,$I2)+COUNTIF('Form Responses 1'!$E:$E,$I2)>0,"Arrived","Waiting"))
+=ARRAYFORMULA(IF((G2:G="")+(H2:H=""),"",G2:G*H2:H))
+```
+Inventory **J2** (Arrived? = a form check-in or a Receiving Log row with the same order # or tracking #):
+```
+=ARRAYFORMULA(IF((E2:E="")*(F2:F=""),"",IF((E2:E<>"")*(IFERROR(COUNTIF(INDIRECT("'Form Responses 1'!D:D"),E2:E),0)+COUNTIF('Receiving Log'!C:C,E2:E))+(F2:F<>"")*(IFERROR(COUNTIF(INDIRECT("'Form Responses 1'!E:E"),F2:F),0)+COUNTIF('Receiving Log'!D:D,F2:F))>0,"Arrived","Waiting")))
+```
+Costs & Trades **L9**:
+```
+=ARRAYFORMULA(IF(J9:J="Y",IF(H9:H<>"",H9:H,G9:G)*(1+IF(K9:K="",0,K9:K)),""))
 ```
 
-It shows "Arrived" once a check-in has the same order # or tracking # as column I (Vendor / order #). Put the order # in column I when you build the inventory.
+### Other tabs
+- **Job Summary:** client info, job type, open questions; dates (enter load day → cutoff, last item received, free-storage end, days to cutoff); receiving status; money (order total, fee, bid).
+- **Receiving Log:** backup for anything checked in without the form. Header is row 2.
+- **Bid:** the pricing calculator (15% / $3,500 minimum, U-Haul, helpers × days × $225, extra trips, included value, payment schedule).
+- **Checklist (optional):** "did we forget anything?" rules for clients furnishing from scratch.
 
-## 4. Setup tab: real "Received %"
-
-Replace the Received % formula for each area with a count of "Arrived", for example for the whole job:
-
-```
-=IFERROR(COUNTIF(Inventory!P:P,"Arrived")/COUNTIF(Inventory!P:P,"?*"),0)
-```
+Older job sheets (built from the old template) use the old layout: a single "Vendor / order #" column (I) and "Arrived?" in P. Match on whichever layout the sheet has.

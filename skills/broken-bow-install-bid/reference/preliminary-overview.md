@@ -1,6 +1,6 @@
 # Preliminary Overview — for new leads
 
-Use before the client has a final purchase list. It shows the whole project without committing to numbers. Format: a Google Doc in the owner's Drive, one per client, titled "<Street> – Cabin Install Overview". The owner shares it view-only with downloading, printing and copying turned off.
+Use before the client has a final purchase list. It shows the whole project without committing to numbers. Format: a Google Doc saved in the client's subfolder of the "Broken Bow Cabin Installs" Drive folder (create "<Street> – <Client names>" if it doesn't exist), one per client, titled "<Street> – Cabin Install Overview". The owner shares it view-only with downloading, printing and copying turned off.
 
 ---
 

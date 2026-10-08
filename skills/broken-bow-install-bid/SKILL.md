@@ -34,7 +34,7 @@ The job lives in its **Installation Guide** sheet in Drive (one per client, copi
 - **Costs & Trades** — every trade, quote, who pays, billable, markup, status
 - **Fee Research** — the market pricing models and the quote calculator
 
-No sheet yet? Copy the HHG Installation Template for the new client, or take a pasted order list / design board and build the intake from that. Full checklist in `reference/job-intake.md`. The essentials:
+All job files live in the **Broken Bow Cabin Installs** Drive folder: one subfolder per client ("<Street> – <Client names>"), `_Templates` for the HHG Installation Template, and `_Private – Income (never share)` for every Income sheet. Never put an Income sheet in a client folder. No sheet yet? Copy the HHG Installation Template for the new client, or take a pasted order list / design board and build the intake from that. Full checklist in `reference/job-intake.md`. The essentials:
 
 - **The order list** — every item, vendor, quantity, box count if known, and ship status (ordered / shipped with tracking / delivered / backordered)
 - **The cabin** — address, bedrooms, floors, stairs, driveway and road access

@@ -44,7 +44,7 @@ Date: <date> · Valid for: <X> days
 - **Payments:** 50% of the design fee at signing; U-Haul and crew 14 days before load day; the rest at hand-off
 - **Minimum:** the design fee is 15% of your final order total or $3,500, whichever is greater
 - **Old furniture:** removal labor as quoted; dump and donation fees billed at cost on your final bill, with receipts
-- **Returns:** one vendor return or exchange is included; more are quoted as needed
+- **Returns:** items damaged in shipping are handled at no charge. Up to 3 change-of-mind returns or exchanges are included per project; additional returns are $35 per small item (ships back by UPS, FedEx or USPS) or $75 per large furniture piece (needs a truck pickup)
 - **Extra trips:** $250 plus the current IRS mileage rate, round trip, plus tolls
 - **Insurance and liability:** <liability clause from the rate card, attorney-reviewed>
 - **Late shipments:** items arriving after the cutoff go on a second trip at the price above, or are left for you to place — your choice

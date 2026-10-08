@@ -95,7 +95,7 @@ Every U-Haul quote has more than the daily rate. Include all of it:
 | Payment 1, at signing | 50% of the design fee |
 | Payment 2, 14 days before load day | U-Haul quote + helper labor |
 | Payment 3, at hand-off | Rest of the design fee + disposal receipts + any extras |
-| Returns and exchanges | One vendor return or exchange per order included; more are quoted as needed |
+| Returns and exchanges | Damaged-in-shipping items handled at no charge (unlimited). Up to 3 change-of-mind returns or exchanges per project included; then $35 per small item (ships back by UPS, FedEx or USPS) or $75 per large furniture piece (needs a truck pickup) |
 | Change order rate | $______ |
 | Cancellation | ______ |
 

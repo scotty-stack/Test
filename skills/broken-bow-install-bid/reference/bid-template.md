@@ -21,9 +21,9 @@ Date: <date> · Valid for: <X> days
 
 <TV mounting, electrical, painting, repairs, vendor returns, etc. — per this job>
 
-## Install window
+## Install date
 
-<dates>, between your guest stays. This depends on every item reaching our warehouse by **<receiving cutoff date>**.
+<date you chose>. Every item needs to reach us by **<receiving cutoff date>** (7 days before load day). If something misses the cutoff, you choose: an extra trip later, or move the install date.
 
 ## Price
 

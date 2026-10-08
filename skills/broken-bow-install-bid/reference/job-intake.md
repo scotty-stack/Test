@@ -32,12 +32,15 @@ For every item: vendor, item, quantity, box count if known, dimensions or catego
 - Hot tub, game room, or outdoor living spaces in scope?
 - Wall material for art hanging (log, shiplap, drywall) — affects hardware and time
 
-## The install window
+## The install date
 
-- Dates the cabin is empty between guest stays — get the actual booking calendar if possible
-- Check-out time of the stay before, check-in time of the stay after
-- Does the cleaning crew need time after install before guests arrive?
+- When does the client want the install? Plan backward: load day, then the receiving cutoff 7 days before.
+- New build: the house must be complete before closing, so the install date follows closing.
 - Weather risk (November–February ice on hill roads; spring storms)
+
+## Crew and days
+
+- Benchmark from a past 2BR job: 3 helpers plus the owner, 3 days on site. Scale from there by bedroom count and game room pieces, then adjust per job.
 
 ## Scope
 

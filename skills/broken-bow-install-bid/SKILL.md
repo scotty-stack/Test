@@ -38,7 +38,7 @@ No sheet yet? Copy the HHG Installation Template for the new client, or take a p
 
 - **The order list** — every item, vendor, quantity, box count if known, and ship status (ordered / shipped with tracking / delivered / backordered)
 - **The cabin** — address, bedrooms, floors, stairs, driveway and road access
-- **The install window** — the dates between guest stays when the cabin is empty
+- **The install date** — when the client wants the install. Work backward from it: load day, then the receiving cutoff 7 days before. (These cabins are not active rentals yet, so there's no guest calendar to work around.)
 - **Scope** — install only, or install plus removal of existing furniture
 - **What happens to the old furniture** — donate, sell, client keeps, or dump
 
@@ -84,7 +84,7 @@ Internal view first, before anything client-facing:
 
 ```
 Smith cabin — 4BR, 2 floors, Hochatown
-Install window: Tue Nov 10 – Thu Nov 12 (between guest stays)
+Install date: Tue Nov 10 (client's choice) · Receiving cutoff: Mon Nov 2
 One trip: AT RISK — the dining table (Vendor X) is backordered to Nov 6
 
 Line                      Math                          Amount
@@ -109,7 +109,7 @@ Then the decision points, in one message:
 Draft from `reference/bid-template.md`, in the owner's voice (read [the voice profile](../../shared/voice-profile.md) if it exists). It must include:
 
 - What's included and what's not, in plain words
-- The install window and what it depends on (all items delivered by the cutoff date)
+- The install date the client chose, and the receiving cutoff worked backward from it
 - The order total wording: the fee is 15% of the final order total (minimum $3,500), so it adjusts if items are added or removed
 - The three payments, old-furniture disposal at cost with receipts, and the liability clause
 - Complimentary storage, with its value, so the client sees what they're getting
@@ -125,7 +125,7 @@ Produce DOCX or PDF. With Gmail connected, save it as a **draft** to the client.
 
 ## Step 6 — After it's accepted
 
-Offer, don't assume: put the install window and load date on the calendar, and set a shipment cutoff reminder 7 days before load date to chase any undelivered items.
+Offer, don't assume: put the install date and load date on the calendar, and set a shipment cutoff reminder 7 days before load date to chase any undelivered items.
 
 ## What not to do
 

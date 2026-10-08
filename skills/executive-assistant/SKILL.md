@@ -84,6 +84,7 @@ Trigger: "what's on my list," "what am I forgetting," "who's waiting on me," "mo
 
 - **Morning**: today's calendar, reminders due today, follow-ups due or overdue, people going cold, emails and texts waiting on a reply. Build the **Today** section with no more than 5 must-dos.
 - **Midday**: what's still open from Today, plus anything new in the inbox waiting on him.
+- **Texts and missed calls**: only when running on the iMac. See `reference/sweeps.md`.
 - **End of day**: what got done (move it to Done), what rolls to tomorrow, and a 60-second "anything still in your head?" prompt that runs a brain dump.
 
 If the morning-dashboard skill already ran today, don't repeat its calendar prep. Add only the ledger view: follow-ups, waiting-on, and going-cold.

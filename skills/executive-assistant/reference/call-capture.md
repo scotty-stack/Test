@@ -7,9 +7,16 @@ The goal: every client conversation leaves a written trace the assistant can rea
 - **Zoom meetings** are recorded and summarized by **Read AI**, which is already connected. Mode 3 reads `action_items` and `summary` from Read AI. Nothing to set up.
 - **Google Meet and Teams** are covered by Read AI too, if its calendar auto-join is on for those.
 
-## The gap: cell phone calls
+## Cell phone calls: Scotty's choice is iPhone recording
 
-Most client conversations in real estate happen on the cell phone, and nothing is capturing those yet. Options, best first:
+As of October 2026, Scotty records cell calls with the iPhone's built-in recorder. He may move to a business line in 2027. The workflow:
+
+1. During a client call, tap the record button. iPhone announces it to the other person.
+2. After the call, the recording, transcript, and summary land in the Notes app (Call Recordings folder), and Notes syncs to the iMac.
+3. To get it to the assistant: share the transcript into chat, or save it to the Drive folder **"Call Transcripts."** When Claude is running on the iMac, it can also read today's call-recording notes straight from Notes.
+4. No time to share it? A 20-second voice note works ("just talked to Maria, she wants to counter at 315, I owe her comps tomorrow").
+
+## Other options (for later)
 
 1. **iPhone's built-in call recording** (iOS 18.1 and later): tap the record button during a call. iPhone announces the recording to both sides automatically, and the recording plus a transcript and summary are saved to the Notes app. Free, nothing to install. To get it to the assistant, share the transcript into chat or save it to a Drive folder named **"Call Transcripts"** that the after-call mode reads.
 2. **A business line app (OpenPhone/Quo, RingCentral, Dialpad)**: auto-records every call on the business number, transcribes it, and emails or Slacks a summary. This is the most hands-off option, because the assistant can find the summaries in Gmail on every sweep with no tapping. It also keeps client calls off the personal number.

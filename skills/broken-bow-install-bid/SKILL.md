@@ -125,7 +125,7 @@ Produce DOCX or PDF. With Gmail connected, save it as a **draft** to the client.
 
 ## Step 6 — After it's accepted
 
-Offer, don't assume: put the install date and load date on the calendar, and set a shipment cutoff reminder 7 days before load date to chase any undelivered items.
+Offer, don't assume: put the install date and load date on the calendar. Ask the client to forward every order confirmation and tracking number. Two weeks and one week before the receiving cutoff, compare the purchase list against the Receiving Log and draft the client an outstanding-items list (owner approves before it's sent).
 
 ## What not to do
 

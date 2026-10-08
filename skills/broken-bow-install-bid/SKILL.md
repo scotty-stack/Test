@@ -60,15 +60,15 @@ Output: **One trip: yes / at risk / no**, with the specific reasons.
 
 Read `reference/rate-card.md` (the owner's numbers) and `reference/pricing-lines.md` (how each line is calculated). Price every line and show the arithmetic so the owner can check it in ten seconds:
 
-The formula: **15% of the final order total (the owner's fee, theirs alone) + the U-Haul at cost + helper labor**, plus pass-throughs and add-ons. Storage is shown at its full value, then marked complimentary.
+The formula: **15% of the final order total, minimum $3,500 (the owner's fee; any partner split set per job) + the U-Haul at cost + $225 per helper per day**, plus pass-throughs and add-ons. Storage is shown at its full value, then marked complimentary.
 
 1. Design fee: 15% x order total. Use the final order list if it exists, otherwise the Setup budget, labeled as an estimate that adjusts to the final order total
 2. U-Haul: a real quote for the truck size the cabin needs (mileage, fuel, coverage, pads) billed at cost
-3. Helper labor: helper rate x helpers x days (load, drive, install, drive home)
-4. Lodging and travel, at cost
-5. Trash and packaging haul-off and disposal
+3. Helper labor: $225 x helpers x days (load, drive, install, drive home)
+4. Lodging: $0, since the crew stays at the cabin (at cost only if it can't)
+5. Install-day trash: included at no charge
 6. Optional: existing furniture removal, by disposition
-7. Storage: its full value shown, then "included at no charge"; billed only past the free period
+7. Storage: its full value shown, then "included at no charge"; free 30 days after the last item arrives, then $80/week
 8. Second-trip line (conditional, priced separately, not buried)
 9. Trades passed through (paint, electrical, carpentry, cleaning, decks): quoted cost + markup, and who pays the trade directly
 
@@ -90,7 +90,7 @@ One trip: AT RISK — the dining table (Vendor X) is backordered to Nov 6
 Line                      Math                          Amount
 Design fee                15% x $__ design budget       $...
 U-Haul                    <truck> quote for <date>      $...
-Crew                      $200 x 2 helpers x 3 days     $...
+Crew                      $225 x 2 helpers x 3 days     $...
 ...
 Total                                                   $...
 Margin check              cost $... / price $...        ...%
@@ -110,7 +110,8 @@ Draft from `reference/bid-template.md`, in the owner's voice (read [the voice pr
 
 - What's included and what's not, in plain words
 - The install window and what it depends on (all items delivered by the cutoff date)
-- The order total wording: the fee is 15% of the final order total, so it adjusts if items are added or removed
+- The order total wording: the fee is 15% of the final order total (minimum $3,500), so it adjusts if items are added or removed
+- The three payments, old-furniture disposal at cost with receipts, and the liability clause
 - Complimentary storage, with its value, so the client sees what they're getting
 - The second-trip terms and the storage cutoff, so a late shipment isn't a surprise invoice
 - Damage terms: items are inspected on arrival; vendor damage claims are the client's, with the owner's help

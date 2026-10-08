@@ -11,9 +11,11 @@ Update this whenever a rate changes, so every future bid picks it up.
 ```
 Bid = Design fee + U-Haul + Helper labor + pass-through costs + optional add-ons
 
-Design fee    = 15% x final order total            (the owner's fee, not shared)
+Design fee    = 15% x final order total, minimum $3,500   (owner's fee; any split with a partner is set per job)
 U-Haul        = whatever U-Haul charges for the truck size requested (at cost, no markup)
-Helper labor  = helper rate x helpers x days in Broken Bow
+Helper labor  = $225 x helpers x days (covers helper pay plus meals)
+Extra trips   = $250 flat + current IRS mileage rate x round-trip miles + tolls
+Trash         = included at no charge
 Storage       = shown at full value, then "included at no charge"
 ```
 
@@ -24,10 +26,10 @@ Storage       = shown at full value, then "included at no charge"
 | Who earns the design fee | Owner only |
 | U-Haul billing | At cost: exactly what U-Haul charges for the truck size requested |
 | Helper cost (what you pay each helper) | about $200 per person per day |
-| Helper rate billed to the client | At cost, the same as what you pay (owner's choice for now; see the note below) |
+| Helper rate billed to the client | $225 per person per day (the extra covers meals) |
 | Does the owner's own time count as a crew day? | ______ (default: no, the 15% covers it) |
 | Days counted from | ______ (drive day included? default: every day a helper is away from home) |
-| Minimum job | $______ |
+| Minimum fee | $3,500 (15% reaches it at about a $23,300 order) |
 
 ## U-Haul, by cabin size
 
@@ -65,23 +67,19 @@ Every U-Haul quote has more than the daily rate. Include all of it:
 | Item | Value |
 |---|---|
 | Receiving location | Owner's garage |
-| Free storage | Included at no charge until install day, as long as everything arrives by the receiving cutoff |
-| Storage value shown on the bid | $75/month (standard 10x10) or $91/month (climate-controlled 10x10). These are OKC averages, July 2026 (StorageCafe; Extra Space). Use climate-controlled only if the garage actually is. Size up to 10x15 or 10x20 for 3BR+. Re-check yearly |
+| Free storage | 30 days, counted from the date the last item arrives |
+| Storage value shown on the bid | The owner's own rate: about 8 weeks x $80 = $640 |
 | Receiving and inspection value shown | 4% of the order total, the low end of the 4–8% designers' receiving warehouses add (Fee Research tab). No OKC warehouse publishes a per-item rate |
-| Storage after the free period | $______ per week |
+| Storage after the free period | $80 per week |
 | Receiving cutoff before load date | ______ days (suggested: 7) |
 | Garage capacity, so two jobs don't overlap | ______ |
-
-### Note on helper labor
-
-Billing helpers at cost keeps the bid lean, but you carry the risk: a helper who no-shows or gets hurt, their meals, and your time scheduling them. A common option is a small markup ($25–50 per helper per day) labeled as crew coordination. Also: anyone paid $600+ in a year needs a 1099 from you.
 
 ## Trash and haul-off
 
 | Item | Value |
 |---|---|
-| Packaging haul-off and disposal | $______ |
-| Existing furniture removal | $______ (or free, by choice, but stated as $0 in the bid so the client sees its value) |
+| Install-day trash and packaging | Included at no charge |
+| Existing furniture removal | Labor quoted up front; dump, donation and mattress fees billed at cost on the final bill with receipts |
 | Mattress disposal fee | $______ each |
 
 ## Second trip
@@ -94,11 +92,25 @@ Billing helpers at cost keeps the bid lean, but you carry the risk: a helper who
 
 | Item | Value |
 |---|---|
-| Deposit at signing | ______ % (suggested: enough to cover the U-Haul and crew so you're never out of pocket) |
-| Balance due | ______ |
+| Payment 1, at signing | 50% of the design fee |
+| Payment 2, 14 days before load day | U-Haul quote + helper labor |
+| Payment 3, at hand-off | Rest of the design fee + disposal receipts + any extras |
+| Returns and exchanges | One vendor return or exchange per order included; more are quoted as needed |
 | Change order rate | $______ |
 | Cancellation | ______ |
 
 ## Income split (internal only)
 
 Each line's "our cut" goes on the job's private Income sheet: who earns it (owner, partner, or both) and the share %. Pass-through costs (U-Haul, lodging, fuel, trades the client pays) are not income. The 15% design fee is the owner's alone. Markup on the U-Haul, helper labor and trades is income, and can be split with a partner.
+
+## Second trip / extra trips
+
+$250 flat (covers about 8–9 hours of driving) + current IRS business mileage rate (76¢ from July 1, 2026) x round-trip miles (about 500 from OKC) + tolls. About $630 per trip.
+
+## Liability (draft for attorney review)
+
+> Owner keeps insurance on all purchased items, including while in storage and in transit. Our liability for any loss or damage is limited to the fees paid for our services. We are not responsible for delays or damage caused by weather, road conditions, natural events, or other circumstances beyond our control. Damage occurring before an item reaches us is handled with the vendor or carrier, with our documentation to support your claim.
+
+## Lodging
+
+The crew stays at the cabin during install (no guests are ever booked, and the house is complete before closing), so lodging is $0. Add it at cost only if a cabin truly can't host the crew.

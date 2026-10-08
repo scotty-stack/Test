@@ -31,9 +31,8 @@ Date: <date> · Valid for: <X> days
 |---|---|
 | Design and project management (15% of your final order total) | $ |
 | Moving truck, loaded and driven to your cabin | $ |
-| Install crew (<n> helpers x <n> days) | $ |
-| Lodging and travel | $ |
-| Trash and packaging haul-off | $ |
+| Install crew (<n> helpers x <n> days x $225) | $ |
+| Trash and packaging haul-off | **Included** |
 | Receiving, inspection and storage until install day (<n> shipments, ~<n> weeks) | ~~$<value>~~ **Included** |
 | **Total** | **$** |
 | Optional: existing furniture removal | $ |
@@ -42,9 +41,14 @@ Date: <date> · Valid for: <X> days
 ## Terms
 
 - **Order total:** our design fee is 15% of your final order total. This bid uses the current order list of $<order total>. If items are added, removed or substituted, the fee adjusts to match the final order total, and we'll show you the updated number before install.
-- **Deposit:** <x>% to schedule; balance <terms>
+- **Payments:** 50% of the design fee at signing; U-Haul and crew 14 days before load day; the rest at hand-off
+- **Minimum:** the design fee is 15% of your final order total or $3,500, whichever is greater
+- **Old furniture:** removal labor as quoted; dump and donation fees billed at cost on your final bill, with receipts
+- **Returns:** one vendor return or exchange is included; more are quoted as needed
+- **Extra trips:** $250 plus the current IRS mileage rate, round trip, plus tolls
+- **Insurance and liability:** <liability clause from the rate card, attorney-reviewed>
 - **Late shipments:** items arriving after the cutoff go on a second trip at the price above, or are left for you to place — your choice
-- **Storage:** included at no charge until install day, as long as everything arrives by <receiving cutoff date>. After install day, <rate> per week
+- **Storage:** free for 30 days after your last item arrives, then $80 per week
 - **Damage:** we inspect and photograph on arrival. Damage in transit from the vendor is claimed with the vendor; we'll provide photos and help with the claim
 - **Changes:** design changes after scheduling are billed at <change order rate>
 

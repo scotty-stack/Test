@@ -49,13 +49,15 @@ Scotty talks with clients in Slack, so check it on every sweep alongside Gmail.
 
 ## Who's waiting on Scotty (texts and calls)
 
-Scotty's iMessages and texts sync to his iMac, so they can only be read by a Claude running **on the iMac** (Claude desktop app or Claude Code there). A cloud session can't reach the iMac.
+Scotty's iMessages and texts sync to his Mac mini, so they can only be read by a Claude running **on the Mac mini** (Claude desktop app or Claude Code there). A cloud session can't reach the Mac mini.
 
-**On the iMac:** read the Messages database read-only. It's at `~/Library/Messages/chat.db` and needs Full Disk Access granted to the app running Claude. Open it with `sqlite3 -readonly`, never write to it, and don't copy message contents anywhere except the ledger summary. Find conversations from the last 7 days where the latest message has `is_from_me = 0`. Match the handle (phone or email) to a People row, and use Contacts for the name if needed. Rank and present them the same way as email, in a separate **TEXTS** list.
+**Preferred: the iMessage extension.** Scotty installed the iMessage extension in the Claude desktop app on his Mac mini. When its tools are available, use them to read recent conversations. **Never use its send tool.** Texts are drafted in chat for Scotty to send himself, even if he seems to ask in passing; he must say "send it" about a specific draft, and even then confirm the recipient and exact text first.
+
+**Fallback, on the Mac mini without the extension:** read the Messages database read-only. It's at `~/Library/Messages/chat.db` and needs Full Disk Access granted to the app running Claude. Open it with `sqlite3 -readonly`, never write to it, and don't copy message contents anywhere except the ledger summary. Find conversations from the last 7 days where the latest message has `is_from_me = 0`. Match the handle (phone or email) to a People row, and use Contacts for the name if needed. Rank and present them the same way as email, in a separate **TEXTS** list.
 
 Call history is in `~/Library/Application Support/CallHistoryDB/CallHistory.storedata` (also read-only). List missed calls from the last 2 days with no callback since.
 
-**In the cloud (scheduled sweeps):** skip texts and calls. End the sweep with: "Texts aren't in this check. Say 'check my texts' from the iMac, or tell me any I should log."
+**In the cloud (scheduled sweeps):** skip texts and calls. End the sweep with: "Texts aren't in this check. Say 'check my texts' from the Mac mini, or tell me any I should log."
 
 ## Midday sweep (around 12:30pm)
 

@@ -12,8 +12,8 @@ The goal: every client conversation leaves a written trace the assistant can rea
 As of October 2026, Scotty records cell calls with the iPhone's built-in recorder. He may move to a business line in 2027. The workflow:
 
 1. During a client call, tap the record button. iPhone announces it to the other person.
-2. After the call, the recording, transcript, and summary land in the Notes app (Call Recordings folder), and Notes syncs to the iMac.
-3. To get it to the assistant: share the transcript into chat, or save it to the Drive folder **"Call Transcripts."** When Claude is running on the iMac, it can also read today's call-recording notes straight from Notes.
+2. After the call, the recording, transcript, and summary land in the Notes app (Call Recordings folder), and Notes syncs to the Mac mini.
+3. To get it to the assistant: share the transcript into chat, or save it to the Drive folder **"Call Transcripts."** When Claude is running on the Mac mini, it can also read today's call-recording notes straight from Notes.
 4. No time to share it? A 20-second voice note works ("just talked to Maria, she wants to counter at 315, I owe her comps tomorrow").
 
 ## Other options (for later)

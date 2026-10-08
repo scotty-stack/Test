@@ -26,7 +26,7 @@ When a prospective client wants a proposal but has no final purchase list, don't
 
 ## Step 1 — Gather the job, from wherever it lives
 
-The job lives in its **Installation Guide** sheet in Drive (one per client, copied from the HHG Installation Template and named "<Street> Installation Guide"). Search Drive for the client's street name or last name and read these tabs (layout in `reference/hhg-sheet-map.md`):
+The job lives in its **Installation Guide** sheet in Drive (one per client, copied from the Cabin Install Template and named "<Street> Installation Guide"). Search Drive for the client's street name or last name and read these tabs (layout in `reference/hhg-sheet-map.md`):
 
 - **Setup** — bedrooms, bed layout, baths, guests, hot tub / fire pit / game room, the budget by area, and the "Questions for <client>" column
 - **Inventory** — every item, qty, est. cost, ordered, received, installed
@@ -34,7 +34,7 @@ The job lives in its **Installation Guide** sheet in Drive (one per client, copi
 - **Costs & Trades** — every trade, quote, who pays, billable, markup, status
 - **Fee Research** — the market pricing models and the quote calculator
 
-All job files live in the **Broken Bow Cabin Installs** Drive folder: one subfolder per client ("<Street> – <Client names>"), `_Templates` for the HHG Installation Template, and `_Private – Income (never share)` for every Income sheet. Never put an Income sheet in a client folder. No sheet yet? Copy the HHG Installation Template for the new client, or take a pasted order list / design board and build the intake from that. Full checklist in `reference/job-intake.md`. The essentials:
+All job files live in the **Broken Bow Cabin Installs** Drive folder: one subfolder per client ("<Street> – <Client names>"), `_Templates` for the Cabin Install Template, and `_Private – Income (never share)` for every Income sheet. Never put an Income sheet in a client folder. No sheet yet? Copy the Cabin Install Template for the new client, or take a pasted order list / design board and build the intake from that. Full checklist in `reference/job-intake.md`. The essentials:
 
 - **The order list** — every item, vendor, quantity, box count if known, and ship status (ordered / shipped with tracking / delivered / backordered)
 - **The cabin** — address, bedrooms, floors, stairs, driveway and road access

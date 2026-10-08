@@ -1,6 +1,6 @@
 # HHG Installation Guide — Sheet Map
 
-One Google Sheet per client, copied from **HHG Installation Template**. A separate **<Street> Income (Private)** sheet holds the money split and is never shared with the client.
+One Google Sheet per client, copied from **Cabin Install Template**. A separate **<Street> Income (Private)** sheet holds the money split and is never shared with the client.
 
 ---
 

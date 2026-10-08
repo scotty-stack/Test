@@ -33,7 +33,16 @@ Think of it as a chief of staff with a notebook: he talks, it writes everything 
 
 ## The ledger
 
-One Google Doc in Drive named **"EA Ledger: Scotty Hernandez"**. Search Drive for it by exact name. If it doesn't exist, create it from the template in `reference/ledger-format.md` and tell Scotty it was created.
+One Google Doc in Drive named **"EA Ledger: Scotty Hernandez"**, kept in a Drive folder named **"Sterling"**. Search Drive for it by exact name. If it doesn't exist, create the folder and the doc from the template in `reference/ledger-format.md` and tell Scotty it was created.
+
+**How to save (important):** the Google Drive connector can create files but **cannot edit an existing file's contents**; `update_file` only renames or moves. So every save is "write a new copy, then retire the old one":
+
+1. Build the full updated ledger text.
+2. `create_file` a new Google Doc with the same exact title, in the "Sterling" folder, with the full text as `textContent` (`contentMimeType: text/plain`, which converts to a Google Doc).
+3. Only after step 2 succeeds and returns a file id, `trash_file` the old ledger. Trash is recoverable for 30 days, so nothing is ever truly lost.
+4. If step 2 fails, leave the old ledger alone and tell Scotty the save failed.
+
+**How to read:** search by exact title. If more than one copy exists (a trash step failed), read the most recently modified one, then trash the older copies after your next successful save.
 
 Sections, in this order: **Today**, **Reminders**, **Follow-ups** (people I owe), **Waiting on** (people who owe me), **Tasks**, **People** (client and contact roster), **Ideas / someday**, **Inbox (unsorted)**, **Done (last 14 days)**. Format and field rules are in `reference/ledger-format.md`.
 

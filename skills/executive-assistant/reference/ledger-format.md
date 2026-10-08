@@ -1,6 +1,6 @@
 # EA Ledger format
 
-Google Doc in Drive, exact name **"EA Ledger: Scotty Hernandez"**. Plain text with simple markdown-style headings so it reads cleanly in Docs and parses reliably. Rewrite the whole doc on each update, keeping section order.
+Google Doc in Drive, exact name **"EA Ledger: Scotty Hernandez"**. Plain text with simple markdown-style headings so it reads cleanly in Docs and parses reliably. Every update writes a fresh full copy and trashes the previous one (see "How to save" in SKILL.md), keeping section order.
 
 ## Defaults
 

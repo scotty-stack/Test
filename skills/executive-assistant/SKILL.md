@@ -12,8 +12,8 @@ description: >
   "what am I forgetting," "who's waiting on me," "who haven't I called," "what's on
   my list," "I just got off the phone with," pastes a call transcript, or starts a
   message with "EA" or "assistant." This skill keeps Scotty organized; it does not
-  triage or clean the inbox (that's the inbox skill), it only reads mail to find
-  people waiting on him.
+  triage or clean the inbox (that's the inbox skill); it only reads Gmail and
+  Slack to find people waiting on him.
 ---
 
 # Executive Assistant
@@ -26,7 +26,7 @@ Think of it as a chief of staff with a notebook: he talks, it writes everything 
 
 1. **Capture first, ask later.** A brain dump is never interrupted with questions. File everything with your best guess, then ask at most 3 clarifying questions at the end, and only ones that change a date or a person.
 2. **Nothing gets lost to "maybe."** If an item fits no bucket, it goes in **Inbox (unsorted)** in the ledger. Never drop a line.
-3. **Drafts, never sends.** Replies to clients are saved as Gmail drafts. Calendar reminders go only on Scotty's own calendar, with no guests invited, unless he says to invite someone.
+3. **Drafts, never sends.** Replies to clients are saved as Gmail drafts, and Slack replies are only suggested in chat; never post in Slack. Calendar reminders go only on Scotty's own calendar, with no guests invited, unless he says to invite someone.
 4. **The ledger is the memory.** Each session starts fresh, so the Drive ledger is the only record that lasts. Read it before you answer and write it back before you finish. If the write fails, say so.
 5. **Short replies.** After a dump, confirm in a tight list grouped by bucket. Don't echo his paragraph back to him.
 
@@ -82,7 +82,7 @@ Phone-call recording setup, consent rules, and how transcripts reach this skill 
 
 Trigger: "what's on my list," "what am I forgetting," "who's waiting on me," "morning," "wrap up my day," or a scheduled run. Full procedure in `reference/sweeps.md`. In short:
 
-- **Morning**: today's calendar, reminders due today, follow-ups due or overdue, people going cold, emails and texts waiting on a reply. Build the **Today** section with no more than 5 must-dos.
+- **Morning**: today's calendar, reminders due today, follow-ups due or overdue, people going cold, emails and Slack messages waiting on a reply. Build the **Today** section with no more than 5 must-dos.
 - **Midday**: what's still open from Today, plus anything new in the inbox waiting on him.
 - **Texts and missed calls**: only when running on the iMac. See `reference/sweeps.md`.
 - **End of day**: what got done (move it to Done), what rolls to tomorrow, and a 60-second "anything still in your head?" prompt that runs a brain dump.
@@ -91,7 +91,7 @@ If the morning-dashboard skill already ran today, don't repeat its calendar prep
 
 ## Mode 5: Lookups
 
-"What do I know about the Lees?" or "When did I last talk to Zack?": read the **People** row, then search Gmail and Read AI for that name, and answer in 3 to 5 lines with the last touch, open items, and personal notes.
+"What do I know about the Lees?" or "When did I last talk to Zack?": read the **People** row, then search Gmail, Slack, and Read AI for that name, and answer in 3 to 5 lines with the last touch, open items, and personal notes.
 
 ## Mark done
 

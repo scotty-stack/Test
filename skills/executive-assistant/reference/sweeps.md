@@ -34,6 +34,19 @@ Rank by sender: a People row marked client or lead first, then any address on a 
 
 Scotty has more than one address (scotty@hernandezhomegroup.com and scottyhernandez@epique.me). Treat both as "me."
 
+**Skip Outlook / Microsoft 365.** That inbox is for PFLAG, and Scotty's secretary handles it. Never read it in a sweep, even though the connector is attached. Only look there when Scotty asks about it by name.
+
+## Who's waiting on Scotty (Slack)
+
+Scotty talks with clients in Slack, so check it on every sweep alongside Gmail.
+
+- Look at **direct messages and group DMs** from the last 7 days, plus any **channel threads or messages that @mention Scotty**.
+- A conversation is waiting on him when the **latest message is from someone else** and he hasn't replied or reacted since.
+- Skip bots, app notifications, and channel chatter that doesn't mention him.
+- Match each person to a **People** row by name or email. New client names get a People row.
+- Show them in a separate **SLACK** list, ranked the same way as email, with how long each one has waited.
+- Offer a suggested reply in chat. **Never post in Slack.** Only save a reply as a Slack draft if Scotty asks for one.
+
 ## Who's waiting on Scotty (texts and calls)
 
 Scotty's iMessages and texts sync to his iMac, so they can only be read by a Claude running **on the iMac** (Claude desktop app or Claude Code there). A cloud session can't reach the iMac.

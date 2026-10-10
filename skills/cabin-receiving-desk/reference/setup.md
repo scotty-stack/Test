@@ -52,8 +52,6 @@ Inventory **J2** (Arrived? = the item's order # or tracking # appears anywhere i
 =ARRAYFORMULA(IF((E2:E="")*(F2:F=""),"",IF(((E2:E<>"")*ISNUMBER(SEARCH("|"&UPPER(SUBSTITUTE(E2:E," ",""))&"|","|"&UPPER(SUBSTITUTE(TEXTJOIN("|",TRUE,IFERROR(INDIRECT("'Form Responses 1'!D2:E"),""),'Receiving Log'!C3:D)," ",""))&"|"))+(F2:F<>"")*ISNUMBER(SEARCH("|"&UPPER(SUBSTITUTE(F2:F," ",""))&"|","|"&UPPER(SUBSTITUTE(TEXTJOIN("|",TRUE,IFERROR(INDIRECT("'Form Responses 1'!D2:E"),""),'Receiving Log'!C3:D)," ",""))&"|")))>0,"Arrived","Waiting")))
 ```
 One tracking or order number per Inventory row. Pasting values over columns I or J deletes these formulas; paste A–H and K–P separately.
-=ARRAYFORMULA(IF((E2:E="")*(F2:F=""),"",IF((E2:E<>"")*(IFERROR(COUNTIF(INDIRECT("'Form Responses 1'!D:D"),E2:E),0)+COUNTIF('Receiving Log'!C:C,E2:E))+(F2:F<>"")*(IFERROR(COUNTIF(INDIRECT("'Form Responses 1'!E:E"),F2:F),0)+COUNTIF('Receiving Log'!D:D,F2:F))>0,"Arrived","Waiting")))
-```
 Costs & Trades **L9**:
 ```
 =ARRAYFORMULA(IF(J9:J="Y",IF(H9:H<>"",H9:H,G9:G)*(1+IF(K9:K="",0,K9:K)),""))

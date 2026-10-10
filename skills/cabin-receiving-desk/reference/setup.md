@@ -6,30 +6,32 @@ About 10 minutes the first time, 2 minutes per job after that (copy the form).
 
 ## 1. The check-in form (Google Forms)
 
-Create it once as "Package Check-in – TEMPLATE". For each job: **Make a copy**, rename it "Package Check-in – <Street>".
+The master copy is **Package Check-In - Template** in `_Templates`. For each job: open it → ⋮ → **Make a copy**, rename it "Package Check-In - <Street>", and move it into the client's folder.
 
 Settings: **Collect email addresses: Verified** (records who received it, and Crystal can be added later). Requires a Google sign-in, which file uploads need anyway.
 
-Questions, in this order (the formulas below depend on it):
+Questions, in this order. Photos come first so you snap the pictures before typing anything:
 
 | # | Question | Type | Required |
 |---|---|---|---|
-| 1 | Vendor | Dropdown: Amazon, Wayfair, Target, Walmart, Home Depot, Lowe's, IKEA, Other | Yes |
-| 2 | Order # | Short answer | No |
-| 3 | Tracking # | Short answer | No |
-| 4 | Boxes in this delivery | Number (short answer, number validation) | Yes |
-| 5 | Condition | Multiple choice: Good / Damaged / Missing parts / Wrong item | Yes |
-| 6 | Photos (label first, then contents, then any damage) | File upload: images, up to 10 files | Yes |
-| 7 | Stored at | Dropdown: Garage left wall / Garage small bay / Other | No |
-| 8 | Notes | Paragraph | No |
+| 1 | Photos: 1) label 2) everything from the box laid out 3) any damage | File upload: images, up to 10 files | Yes |
+| 2 | Vendor (who sold it, not the carrier) | Dropdown: Amazon, Wayfair, Minoan, Target, Walmart, Home Depot, Lowe's, IKEA, Other | Yes |
+| 3 | Boxes in this delivery | Number (short answer, number validation) | Yes |
+| 4 | Condition | Multiple choice: Good / Damaged / Missing parts / Wrong item | Yes |
+| 5 | Stored at | Dropdown: Front living room / Garage left wall / Garage small bay / Other | Yes |
+| 6 | Tracking # | Short answer | No |
+| 7 | Order # (only if printed on a packing slip, not the TBA number) | Short answer | No |
+| 8 | Notes (what's inside, e.g. "3 sheet sets") | Paragraph | No |
 
-Skip question 3. The agent decodes the tracking number from the label's barcode, so the only job is a good label photo: close, flat, in focus, the striped barcode fully in frame, no glare. Pull the yellow driver sticker aside if it covers the stripes. One label photo per box.
+Photos that make matching work: a flat, in-focus label shot with the barcode fully in frame (lift the yellow driver sticker off the stripes), then everything from the box laid out together with product names facing the camera. Type the tracking number when you can; the agent decodes the label barcode as a backup and to catch typos.
+
+Moving or renaming questions never changes the linked sheet's column order, so the formulas below keep working.
 
 **Phone:** open the form link in Chrome or Safari → Share → **Add to Home Screen**.
 
 ## 2. Link the form to the job's sheet
 
-In the form: **Responses → Link to Sheets → Select existing spreadsheet →** the job's "<Street> Installation Guide". This adds a **Form Responses 1** tab. Columns: A Timestamp, B Email, C Vendor, D Order #, E Tracking #, F Boxes, G Condition, H Photos, I Stored at, J Notes.
+In the form: **Responses → Link to Sheets → Select existing spreadsheet →** the job's "<Street> Installation Guide". This adds a **Form Responses 1** tab. The agent finds columns by their header names, not position, because a form copied from the template lists them in question order (Timestamp, Email, Photos, Vendor, Boxes, Condition, Stored at, Tracking #, Order #, Notes) while older forms differ. The Arrived? formula reads the Tracking # and Order # columns by header too (see below).
 
 Photos go to a Drive folder the form creates ("Package Check-in – <Street> (File responses)"). Move that folder into the client's folder; the agent files photos from there.
 
@@ -47,9 +49,9 @@ Inventory **I2**:
 ```
 =ARRAYFORMULA(IF((G2:G="")+(H2:H=""),"",G2:G*H2:H))
 ```
-Inventory **J2** (Arrived? = the item's order # or tracking # appears anywhere in the form's Order # or Tracking # answers, or in the Receiving Log; ignores spaces and capitals, so "Tba 335..." still matches):
+Inventory **J2** (Arrived? = the item's order # or tracking # matches any answer in the form's "Tracking…" or "Order…" column, or the Receiving Log. It finds those form columns by their header names, so it works however the form's questions are ordered, and it ignores spaces and capitals):
 ```
-=ARRAYFORMULA(IF((E2:E="")*(F2:F=""),"",IF(((E2:E<>"")*ISNUMBER(SEARCH("|"&UPPER(SUBSTITUTE(E2:E," ",""))&"|","|"&UPPER(SUBSTITUTE(TEXTJOIN("|",TRUE,IFERROR(INDIRECT("'Form Responses 1'!D2:E"),""),'Receiving Log'!C3:D)," ",""))&"|"))+(F2:F<>"")*ISNUMBER(SEARCH("|"&UPPER(SUBSTITUTE(F2:F," ",""))&"|","|"&UPPER(SUBSTITUTE(TEXTJOIN("|",TRUE,IFERROR(INDIRECT("'Form Responses 1'!D2:E"),""),'Receiving Log'!C3:D)," ",""))&"|")))>0,"Arrived","Waiting")))
+=ARRAYFORMULA(IF((E2:E="")*(F2:F=""),"",IF(((E2:E<>"")*ISNUMBER(SEARCH("|"&UPPER(SUBSTITUTE(E2:E," ",""))&"|","|"&UPPER(SUBSTITUTE(TEXTJOIN("|",TRUE,IFERROR(INDEX(INDIRECT("'Form Responses 1'!A2:Z"),0,MATCH("Tracking*",INDIRECT("'Form Responses 1'!A1:Z1"),0)),""),IFERROR(INDEX(INDIRECT("'Form Responses 1'!A2:Z"),0,MATCH("Order*",INDIRECT("'Form Responses 1'!A1:Z1"),0)),""),'Receiving Log'!C3:D)," ",""))&"|"))+(F2:F<>"")*ISNUMBER(SEARCH("|"&UPPER(SUBSTITUTE(F2:F," ",""))&"|","|"&UPPER(SUBSTITUTE(TEXTJOIN("|",TRUE,IFERROR(INDEX(INDIRECT("'Form Responses 1'!A2:Z"),0,MATCH("Tracking*",INDIRECT("'Form Responses 1'!A1:Z1"),0)),""),IFERROR(INDEX(INDIRECT("'Form Responses 1'!A2:Z"),0,MATCH("Order*",INDIRECT("'Form Responses 1'!A1:Z1"),0)),""),'Receiving Log'!C3:D)," ",""))&"|")))>0,"Arrived","Waiting")))
 ```
 One tracking or order number per Inventory row. Pasting values over columns I or J deletes these formulas; paste A–H and K–P separately.
 Costs & Trades **L9**:

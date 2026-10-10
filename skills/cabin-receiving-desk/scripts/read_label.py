@@ -35,7 +35,7 @@ def barcodes(path):
     im = ImageOps.exif_transpose(Image.open(path)).convert("L")
     w, h = im.size
     boxes = [(0, 0, w, h)]
-    for n in (2, 3):
+    for n in (2, 3, 4):
         tw, th = w // n, h // n
         for i in range(n * 2 - 1):
             for j in range(n * 2 - 1):
@@ -44,11 +44,15 @@ def barcodes(path):
     found = {}
     for box in boxes:
         tile = im.crop(box)
-        for scale in (1, 0.5):
+        for scale in (1, 0.5, 2):
             t = tile.resize((max(1, int(tile.width * scale)), max(1, int(tile.height * scale))))
             for img in (t, ImageOps.autocontrast(t)):
                 for r in zxingcpp.read_barcodes(img, try_rotate=True, try_downscale=True):
-                    if "128" in str(r.format):
+                    # Amazon also hides the TBA number in the square 2D codes
+                    m = re.search(r"TBA\d{12}", r.text)
+                    if m:
+                        found.setdefault(m.group(0), None)
+                    elif "128" in str(r.format):
                         found.setdefault(r.text, None)
     return list(found)
 

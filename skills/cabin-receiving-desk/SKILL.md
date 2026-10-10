@@ -36,7 +36,8 @@ Read the job's **Form Responses** tab and the photos uploaded with each response
 1. **Read the label photo by its barcode, not by eye.** Download the check-in's photos and run `python3 -I scripts/read_label.py <photos>` (needs `pip install zxing-cpp pillow`). It decodes the shipping barcode and prints the carrier and exact tracking number. Amazon labels often print the TBA number only on the small yellow driver sticker, too blurry to read reliably, so the barcode is the source of truth. Then read the rest by eye: vendor, order # if shown, box count ("2 of 3"), and the address line under the street. Clients who type a room into that line ("– LIVING/DINING ROOM", "– DECKS") are telling you where the item goes; put it in Placement.
    - A barcode starting **X00** is Amazon's product sticker, not tracking; the script skips it.
    - **No label readable** (glare, fold, no label photo): list that check-in for the owner to re-shoot or type in. Never guess digits.
-   - The owner leaves Tracking # blank on the form; a typed number always wins over a decoded one.
+   - When the owner typed a number too, compare: a decoded number wins over a typed one (UPS numbers carry a check digit, so a typo is provable). List every mismatch for the owner to fix on the form.
+   - Group photos into check-ins by upload time (photos from one submission land within a minute) and confirm the count against the Form Responses rows.
 2. **Match it to the Inventory** by order # or tracking number, then by item description in the contents photo. Say how it was matched.
 3. **Flag problems:**
    - Box count short ("2 of 3 received") → watch for the rest
@@ -44,7 +45,7 @@ Read the job's **Form Responses** tab and the photos uploaded with each response
    - No matching Inventory line → unexpected item; ask the owner
    - Same tracking number twice → possible duplicate entry
 4. **File the photos** into the client's folder: `Broken Bow Cabin Installs/<Street> – <Names>/Receiving Photos/<date> <vendor> <order #>`. Create folders as needed.
-5. **Give the owner paste-ready updates:** Inventory Tracking # (if the order line had none), Received date, Condition and Stored at. Arrived? updates itself once the order # or tracking # matches.
+5. **Give the owner paste-ready updates** as a Drive sheet laid out row-for-row with Inventory (row #, item name to check alignment, then the values for F and K–M), so it's two pastes, not a hunt: Inventory Tracking # (if the order line had none), Received date, Condition and Stored at. Arrived? updates itself once the order # or tracking # matches.
 
 ## Step 3 — Damage, wrong item, missing parts
 

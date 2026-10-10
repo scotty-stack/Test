@@ -23,7 +23,7 @@ Questions, in this order (the formulas below depend on it):
 | 7 | Stored at | Dropdown: Garage left wall / Garage small bay / Other | No |
 | 8 | Notes | Paragraph | No |
 
-Tip: the agent reads tracking and order numbers off the label photo, so on a busy day you can skip questions 2 and 3.
+Skip question 3. The agent decodes the tracking number from the label's barcode, so the only job is a good label photo: close, flat, in focus, the striped barcode fully in frame, no glare. Pull the yellow driver sticker aside if it covers the stripes. One label photo per box.
 
 **Phone:** open the form link in Chrome or Safari → Share → **Add to Home Screen**.
 

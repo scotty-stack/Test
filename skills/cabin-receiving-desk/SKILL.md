@@ -10,7 +10,7 @@ description: >
   whenever the owner mentions receiving, a package or delivery arriving, checking in boxes,
   the receiving log, inventory, tracking numbers, order confirmations, damaged or missing
   items, what's still outstanding, or setting up a new job's inventory.
-allowed-tools: Read, WebFetch
+allowed-tools: Read, WebFetch, Bash
 ---
 
 # Cabin Receiving Desk
@@ -33,7 +33,10 @@ Output rows ready to paste into the job's **Inventory** tab, in column order: Ar
 
 Read the job's **Form Responses** tab and the photos uploaded with each response. For each new check-in:
 
-1. **Read the label photo:** carrier, tracking number, vendor, order # if shown, box count ("2 of 3").
+1. **Read the label photo by its barcode, not by eye.** Download the check-in's photos and run `python3 -I scripts/read_label.py <photos>` (needs `pip install zxing-cpp pillow`). It decodes the shipping barcode and prints the carrier and exact tracking number. Amazon labels often print the TBA number only on the small yellow driver sticker, too blurry to read reliably, so the barcode is the source of truth. Then read the rest by eye: vendor, order # if shown, box count ("2 of 3"), and the address line under the street. Clients who type a room into that line ("– LIVING/DINING ROOM", "– DECKS") are telling you where the item goes; put it in Placement.
+   - A barcode starting **X00** is Amazon's product sticker, not tracking; the script skips it.
+   - **No label readable** (glare, fold, no label photo): list that check-in for the owner to re-shoot or type in. Never guess digits.
+   - The owner leaves Tracking # blank on the form; a typed number always wins over a decoded one.
 2. **Match it to the Inventory** by order # or tracking number, then by item description in the contents photo. Say how it was matched.
 3. **Flag problems:**
    - Box count short ("2 of 3 received") → watch for the rest
@@ -67,3 +70,4 @@ When the job is fully received, give `broken-bow-install-bid` the final counts: 
 ## Reference files
 
 - `reference/setup.md` — the receiving form questions, linking it to the job's sheet, and the Inventory formulas
+- `scripts/read_label.py` — decodes tracking numbers from label photos (Amazon, UPS, USPS, FedEx)

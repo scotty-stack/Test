@@ -1,10 +1,9 @@
 #!/bin/bash
-# Send a text through the Mac's Messages app.
+# Low-level: send one text through the Mac's Messages app. Melissa never calls this
+# directly; text_owner.sh and send_to_client.py do, after their checks.
 # Usage: send_imessage.sh <phone or email> <message> [sms]
-#   Phone numbers in +1XXXXXXXXXX form. Pass "sms" as the third argument to send as a
-#   green-bubble text (needs Text Message Forwarding from the owner's iPhone).
-# The handle and message go in as arguments, never pasted into the script, so quotes
-# and apostrophes in a message can't break it.
+# The handle and message go in as arguments, never pasted into the AppleScript, so
+# quotes and apostrophes in a message can't break it.
 set -euo pipefail
 
 if [ $# -lt 2 ]; then

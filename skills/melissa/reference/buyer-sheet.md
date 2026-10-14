@@ -31,8 +31,8 @@ The buyer files live in one Google Sheet, **Melissa Buyers**, in the owner's Dri
 | U | Watch-outs | Mike works nights; Jen's mom may move in ~2 yrs |
 | V | Commute | Mike → Tinker AFB ≤ 35 min at 6pm |
 | W | Move by | 2027-03 |
-| X | MLS saved search name | Melissa – Smith |
-| Y | Lofty contact link | |
+| X | Matrix auto-email name | Homes in Bethany, Mustang, & Yukon |
+| Y | Lofty alert / contact link | |
 | Z | Notes | |
 
 Separate list items with `;`.
@@ -56,7 +56,8 @@ Date/time · Source (MLS API / email / on demand) · Listings read · Out on dea
 | Owner mobile | +1405… |
 | Run times | 08:00, 12:00, 17:00 |
 | Last run | (Melissa updates) |
-| MLS email sender(s) | (from the first saved-search email) |
+| Alert senders | OKC@southcentralmatrixmail.com (Matrix Concierge), no-reply@lofty.com (Lofty) |
+| Last digest | (Melissa updates; one waiting-on-you digest per day) |
 | Owner signature for client texts | — Scotty |
 
 ## Moving to a new CRM
